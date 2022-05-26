@@ -17,7 +17,13 @@ export default function Components({ items }) {
 
 function DrawList({ id, label, percentage }) {
   return (
-    <li className="item" key={id}>
+    <li
+      className="item"
+      key={id}
+      style={{
+        backgroundColor: 'lightcyan',
+      }}
+    >
       <span className="label">{label}</span>
       <span className="percentage">{percentage}</span>
     </li>

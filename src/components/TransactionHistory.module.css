@@ -1,4 +1,4 @@
-.transaction-history{
+.transactionHistory{
     width: 450px;
     justify-content: center;
     text-align: center;
@@ -6,7 +6,7 @@
     box-shadow: 5px 5px 4px #888888;
 }
 
-.transaction-history thead{
+thead{
     font-size: large;
     background-color: lightskyblue;
     color: white;
@@ -14,12 +14,12 @@
     text-transform: uppercase;
 }
 
-.transaction-history tbody tr{
+tr{
     height: 40px;
     color: grey;
     text-transform: capitalize;
 }
 
-.transaction-history tbody tr:nth-child(even){
+tr:nth-child(even){
     background-color: lightgrey;
 }

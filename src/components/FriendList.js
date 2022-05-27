@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import './FriendList.css';
+import styles from './FriendList.module.css';
 
 export default function FriendList({ friends }) {
   return (
-    <ul className="friend-list">
+    <ul className={styles.friendlist}>
       {friends.map(friend => (
         <DrawFriend
           avatar={friend.avatar}
@@ -18,10 +18,10 @@ export default function FriendList({ friends }) {
 
 function DrawFriend({ avatar, name, isOnline, id }) {
   return (
-    <li className="item" key={id}>
-      <span className="status">{isOnline ? '🟢' : '🔴'}</span>
-      <img className="avatar" src={avatar} alt="User avatar" width="48" />
-      <p className="name">{name}</p>
+    <li className={styles.item} key={id}>
+      <span className={styles.status}>{isOnline ? '🟢' : '🔴'}</span>
+      <img className={styles.avatar} src={avatar} alt="User avatar" width="48" />
+      <p className={styles.name}>{name}</p>
     </li>
   );
 }

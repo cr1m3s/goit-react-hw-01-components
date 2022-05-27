@@ -1,22 +1,21 @@
-.friend-list{
+.friendlist{
     display: flex;
     flex-direction: column;
     padding: 0;
 }
 
-.friend-list .item{
+.item{
     margin-top: 10px;
     width: 250px;
     height: 75px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     border: solid 1px grey;
     border-radius: 15px;
 }
 
-.friend-list .item .avatar {
+.avatar {
     width: 65px;
     height: 65px;
     border-radius: 10px;
@@ -30,6 +29,8 @@
     padding-left: 10px;
 }
 
-.friend-list .item .name {
+.name {
     margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: steelblue;
 }

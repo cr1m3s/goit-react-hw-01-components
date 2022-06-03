@@ -1,12 +1,12 @@
 import './App.css';
-import Components from './components/Components';
-import Profile from './components/Profile';
-import FriendList from './components/FriendList';
-import TransactionHistory from './components/TransactionHistory';
-import user from './user.json';
-import data from './data.json';
-import friends from './friends.json';
-import transactions from './transaktions.json';
+import Components from './components/Components/Components';
+import Profile from './components/Profile/Profile';
+import FriendList from './components/FriendList/FriendList';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import user from './components/Profile/user.json';
+import data from './components/Components/data.json';
+import friends from './components/FriendList/friends.json';
+import transactions from './components/TransactionHistory/transaktions.json';
 
 function App() {
   return (

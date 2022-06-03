@@ -5,7 +5,7 @@ export default function FriendList({ friends }) {
   return (
     <ul className={styles.friendlist}>
       {friends.map(friend => (
-        <DrawFriend
+        <FriendListItem
           avatar={friend.avatar}
           name={friend.name}
           isOnline={friend.isOnline}
@@ -16,7 +16,7 @@ export default function FriendList({ friends }) {
   );
 }
 
-function DrawFriend({ avatar, name, isOnline, id }) {
+function FriendListItem({ avatar, name, isOnline, id }) {
   return (
     <li className={styles.item} key={id}>
       <span className={styles.status}>{isOnline ? '🟢' : '🔴'}</span>
@@ -26,8 +26,8 @@ function DrawFriend({ avatar, name, isOnline, id }) {
   );
 }
 
-DrawFriend.propTypes = {
-  avatar: PropTypes.string,
-  isOnline: PropTypes.bool,
-  name: PropTypes.string,
+FriendListItem.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+  name: PropTypes.string.isRequired,
 };

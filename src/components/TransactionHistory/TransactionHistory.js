@@ -36,7 +36,7 @@ function DrawRow({ type, amount, currency, id }) {
 }
 
 DrawRow.propTypes = {
-  type: PropTypes.string,
-  amount: PropTypes.string,
-  currency: PropTypes.string,
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
 };

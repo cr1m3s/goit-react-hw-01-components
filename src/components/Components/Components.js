@@ -26,8 +26,8 @@ function DrawList({ id, label, percentage }) {
 }
 
 DrawList.propTypes = {
-  label: PropTypes.string,
-  percentage: PropTypes.number,
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
 };
 
 function getRandomHexColor() {
